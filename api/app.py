@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from datetime import date
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -31,8 +31,9 @@ def localizar_dic(dic, value):
 
 #getdata
 def getdata():
-    data_atual = date.today()
-    return data_atual
+    data_atual = datetime.now()
+    atual = data_atual.strftime("%d/%m/%Y")
+    return atual
 #criar a 1°pagina do site
 #route -> site.com/pagina
 #funçao -> oque vai aparecer na pagina
