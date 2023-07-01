@@ -56,6 +56,24 @@ def pag_1944():
     id_item = aves["Asa de Frango"]
     name_item = localizar_dic(aves, 1944) 
     return render_template("aves/1944.html", id_item=id_item, name_item=name_item)
+
+@app.route("/1948")
+def pag_1948():
+    id_item = aves["Peito c/ Osso"]
+    name_item = localizar_dic(aves, 1948) 
+    return render_template("aves/1948.html", id_item=id_item, name_item=name_item)
+
+@app.route("/1949")
+def pag_1949():
+    id_item = aves["Coxa Sobre Coxa"]
+    name_item = localizar_dic(aves, 1949) 
+    return render_template("aves/1949.html", id_item=id_item, name_item=name_item)
+
+@app.route("/1947")
+def pag_1947():
+    id_item = aves["Filé de Peito"]
+    name_item = localizar_dic(aves, 1947) 
+    return render_template("aves/1947.html", id_item=id_item, name_item=name_item)
 #----------------------------------------------------------------------------------------
 @app.route("/menu-temperados")
 def pag_menu_temperados():
