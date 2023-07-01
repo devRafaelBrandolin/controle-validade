@@ -50,6 +50,12 @@ def pag_6181():
     id_item = aves["Frango Inteiro"]
     name_item = localizar_dic(aves, 6181) 
     return render_template("aves/6181.html", id_item=id_item, name_item=name_item)
+
+@app.route("/1944")
+def pag_1944():
+    id_item = aves["Asa de Frango"]
+    name_item = localizar_dic(aves, 1944) 
+    return render_template("aves/1944.html", id_item=id_item, name_item=name_item)
 #----------------------------------------------------------------------------------------
 @app.route("/menu-temperados")
 def pag_menu_temperados():
