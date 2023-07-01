@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from datetime import date
 
 app = Flask(__name__)
 
@@ -27,6 +28,11 @@ def localizar_dic(dic, value):
             return chave
     #se nao encontrado
     return None
+
+#getdata
+def getdata():
+    data_atual = date.today()
+    return data_atual
 #criar a 1°pagina do site
 #route -> site.com/pagina
 #funçao -> oque vai aparecer na pagina
@@ -35,6 +41,14 @@ def localizar_dic(dic, value):
 @app.route("/")
 def homepage():
     return render_template("homepage.html")
+#----------------------------------------------------------------------------------------
+#-----------------------menu de lançamento-----------------------------------------------
+@app.route("/add")
+def pag_add():
+    id_item = aves["Frango Inteiro"]
+    name_item = localizar_dic(aves, 6181) 
+    hoje = getdata() 
+    return render_template("add.html", hoje=hoje, id_item=id_item, name_item=name_item)
 #----------------------------------------------------------------------------------------
 @app.route("/menu-aves")
 def pag_menu_aves():
