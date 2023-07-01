@@ -1,0 +1,66 @@
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 160px;
+}
+
+.button0 {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    height: 130px;
+    width: 130px;
+}
+
+.button1 {background-color: #18468B;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+.buttonVoltar {background-color: #EE2722FF;} /* Blue */
+.buttonLancar {background-color: #22EE49FF;} /* Blue */
+.buttonmenu {height: 100px;}
+
+.center {
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+input.rounded {
+    border: 0;
+    border-radius: 25px;
+    background-color: #18468B; 
+    width: 120px; 
+    height: 30px; 
+    padding: 3px 5px; 
+    font-size: 100%;  
+    color: rgb(255, 255, 255); 
+    text-align: center;
+}
+
+label.rounded {
+    padding-top: 5px;
+    font-weight: bold;
+    color: #555;
+    font-size: 12px;
+}
