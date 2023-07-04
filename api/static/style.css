@@ -15,7 +15,7 @@
 .button0 {
     border: none;
     color: white;
-    padding: 15px 32px;
+
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -23,8 +23,8 @@
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
-    height: 80px;
-    width: 80px;
+    height: 130px;
+    width: 130px;
 }
 
 .button1 {background-color: #18468B;} /* Green */
