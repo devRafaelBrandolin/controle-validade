@@ -31,7 +31,7 @@
 .button2 {background-color: #008CBA;} /* Blue */
 .buttonVoltar {background-color: #EE2722FF;} /* Blue */
 .buttonLancar {background-color: #22EE49FF;} /* Blue */
-.buttonmenu {height: 100px;}
+.buttonmenu {height: 100px; width: 180px;}
 
 .center {
     text-align: center;
